@@ -4305,6 +4305,7 @@ body.login .login-content .login-form input[type="submit"] {
   font-weight: bold;
   line-height: 1.15em;
   padding-bottom: 0.5em;
+  text-decoration: none;
 }
 #WhatWeDo .what-grid .grid-item .content p {
   font-size: 0.9rem;
@@ -4463,6 +4464,7 @@ body.login .login-content .login-form input[type="submit"] {
 #Contact .contact-details .summary > h2 {
   margin-top: 0;
   padding-top: 0;
+  text-decoration: none;
 }
 #Contact .contact-details .summary > p {
   padding-top: 0;
@@ -5741,28 +5743,49 @@ body.login .login-content .login-form input[type="submit"] {
   }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1400px) {
   #slider1 {
-    background-image:url('../images/responsive/ceo-800X900.jpg'); 
+    background-image:url('../images/responsive/ceo-1400X900.jpg'); 
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   #slider2 {
-    background-image:url('../images/responsive/cleaning-800X900.jpg');
+    background-image:url('../images/responsive/cleaning-1400X900.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; 
   }
   #slider3 {
-    background-image:url('../images/responsive/team-800X900.jpg');
+    background-image:url('../images/responsive/team-1400X900.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; 
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1400px) and (max-width: 1900px)  {
+  #slider1 {
+    background-image:url('../images/responsive/ceo-1400X900.jpg'); 
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+  #slider2 {
+    background-image:url('../images/responsive/cleaning-1400X900.jpg');
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+  #slider3 {
+    background-image:url('../images/responsive/team-1400X900.jpg');
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1900px) {
   #slider1 {
     background-image:url('../images/responsive/ceo-2000X900.jpg'); 
     background-position: center center;
@@ -5785,4 +5808,18 @@ body.login .login-content .login-form input[type="submit"] {
 
 .mb-2{
     margin-bottom: .5rem!important;
+}
+
+h2, h3 {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(137, 160, 25) !important;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.align-center {
+  text-align: center;
 }
