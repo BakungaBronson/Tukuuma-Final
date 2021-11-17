@@ -4305,16 +4305,16 @@ body.login .login-content .login-form input[type="submit"] {
     padding-bottom: 4rem;
   }
 }
-#WhatWeDo .what-grid .grid-item .content h3 {
+/* #WhatWeDo .what-grid .grid-item .content h3 {
   font-family: "Quicksand";
   font-weight: bold;
   line-height: 1.15em;
   padding-bottom: 0.5em;
   text-decoration: none;
-}
+} */
 #WhatWeDo .what-grid .grid-item .content p {
-  font-size: 0.9rem;
-  font-weight: 300;
+  font-size: 1em;
+  font-weight: 500;
   line-height: 1.5em;
 }
 #WhatWeDo .what-grid .grid-item .content ul {
@@ -4323,8 +4323,8 @@ body.login .login-content .login-form input[type="submit"] {
 #WhatWeDo .what-grid .grid-item .content ul li {
   list-style-image: url("../images/icons/icon-arrow.png");
   margin-bottom: 15px;
-  font-weight: 300;
-  font-size: 0.9rem;
+  font-weight: 400;
+  font-size: 1em;
 }
 #ExpertServices {
   background-size: cover;
