@@ -2879,8 +2879,8 @@ header nav {
 }
 @media (min-width: 1400px) {
   header nav {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
   }
 }
 header nav.small {
@@ -3673,7 +3673,7 @@ body.login .login-content .login-form input[type="submit"] {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-position: top right;
+  background-position: center 20%;
   position: relative;
 }
 #Hero .slider-container .slider .slide .hero-box {
@@ -4119,7 +4119,7 @@ body.login .login-content .login-form input[type="submit"] {
   margin-left: -30px;
   width: calc(100% + 60px);
   left: 0;
-  background-size: cover;
+  background-size:contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -4265,6 +4265,10 @@ body.login .login-content .login-form input[type="submit"] {
   font-weight: bold;
   font-size: 2rem;
 }
+.introduction-heading {
+  font-weight: bold;
+  font-size: 2rem;
+}
 #WhatWeDo .what-grid {
   display: -ms-grid;
   display: grid;
@@ -4281,6 +4285,7 @@ body.login .login-content .login-form input[type="submit"] {
   display: -ms-grid;
   display: grid;
   justify-items: center;
+  align-items: center;
 }
 @media (min-width: 984px) {
   #WhatWeDo .what-grid .grid-item {
@@ -5722,8 +5727,30 @@ body.login .login-content .login-form input[type="submit"] {
   line-height: 1.3em;
 }
 
+#slider1 {
+  background-image:url('../images/slide_show_1.jpg'); 
+  background-position: center center;
+  background-repeat: no-repeat; 
+  max-width: 100%;
+  height: auto;
+}
+#slider2 {
+  background-image:url('../images/involved2.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat; 
+  max-width: 100%;
+  height: auto;
+}
+#slider3 {
+  background-image:url('../images/responsive/logo-1400X900.png');
+  background-position: center center;
+  background-repeat: no-repeat; 
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 480px) {
-  #slider1 {
+  /* #slider1 {
     background-image:url('../images/responsive/ceo-800X900.jpg'); 
     background-position: center center;
     background-repeat: no-repeat; 
@@ -5734,15 +5761,17 @@ body.login .login-content .login-form input[type="submit"] {
     background-position: center center;
     background-repeat: no-repeat; 
     background-size: cover;
-  }
+  } */
   #slider3 {
-    background-image:url('../images/responsive/team-800X900.jpg');
+    background-image:url('../images/image-002.png');
     background-position: center center;
     background-repeat: no-repeat; 
-    background-size: cover;
+    max-width: 100%;
+    height: auto;
   }
 }
 
+/*
 @media (min-width: 481px) and (max-width: 1400px) {
   #slider1 {
     background-image:url('../images/responsive/ceo-1400X900.jpg'); 
@@ -5804,16 +5833,22 @@ body.login .login-content .login-form input[type="submit"] {
     background-repeat: no-repeat; 
     background-size: cover;
   }
-}
+} */
 
 .mb-2{
     margin-bottom: .5rem!important;
 }
 
-h2, h3 {
+h3 {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: rgb(137, 160, 25) !important;
+}
+
+@media (max-width: 480px) {
+  h3 {
+    text-align: center;
+  }
 }
 
 .no-underline {
@@ -5822,4 +5857,72 @@ h2, h3 {
 
 .align-center {
   text-align: center;
+}
+
+@media only screen and (min-device-width : 900px) {
+  #center-heading {
+    text-align: center;
+  }
+}
+
+
+
+/* What-Grid Overrides */
+
+#About .what-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 984px) {
+  #About .what-grid {
+    -ms-grid-columns: (1fr) [5];
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+#About .what-grid .grid-item {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+@media (min-width: 984px) {
+  #About .what-grid .grid-item {
+    border-right: 1px solid #94d4c9;
+  }
+}
+#About .what-grid .grid-item:nth-of-type(5n) {
+  border-right: none;
+}
+#About .what-grid .grid-item .content {
+  width: 70%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (min-width: 984px) {
+  #About .what-grid .grid-item .content {
+    padding-bottom: 4rem;
+  }
+}
+#About .what-grid .grid-item .content h3 {
+  font-family: "Quicksand";
+  font-weight: bold;
+  line-height: 1.15em;
+  padding-bottom: 0.5em;
+  text-decoration: none;
+}
+#About .what-grid .grid-item .content p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+#About .what-grid .grid-item .content ul {
+  padding-left: 1.3rem;
+}
+#About .what-grid .grid-item .content ul li {
+  list-style-image: url("../images/icons/icon-arrow.png");
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-size: 0.9rem;
 }
