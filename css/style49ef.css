@@ -4275,12 +4275,12 @@ body.login .login-content .login-form input[type="submit"] {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
 }
-@media (min-width: 984px) {
+/* @media (min-width: 984px) {
   #WhatWeDo .what-grid {
     -ms-grid-columns: (1fr) [5];
     grid-template-columns: repeat(5, 1fr);
   }
-}
+} */
 #WhatWeDo .what-grid .grid-item {
   display: -ms-grid;
   display: grid;
